@@ -20,7 +20,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 bot_token = os.environ.get('8193486523:AAFGu7sAwd5TABED65gJIiakEvN37qYKyq8')
-workers = int(os.environ.get('WORKERS'))
+workers = int(os.environ.get('False'))
 api = int(os.environ.get('26775695'))
 hash = os.environ.get('b15bb60859bef151762fc5d9eb206c67')
 chnnl = os.environ.get('https://t.me/yang_tiandi')
