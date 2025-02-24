@@ -19,12 +19,12 @@ from progress_bar import progress, TimeFormatter, humanbytes
 from dotenv import load_dotenv
 
 load_dotenv()
-bot_token = os.environ.get('BOT_TOKEN')
-workers = int(os.environ.get('WORKERS'))
-api = int(os.environ.get('API_KEY'))
-hash = os.environ.get('API_HASH')
-chnnl = os.environ.get('CHANNEL_URL')
-BOT_URL = os.environ.get('BOT_URL')
+bot_token = os.environ.get('BOT_TOKEN', "8193486523:AAFGu7sAwd5TABED65gJIiakEvN37qYKyq8")
+workers = int(os.environ.get('WORKERS', 4))
+api = int(os.environ.get('API_KEY', "26775695"))
+hash = os.environ.get('API_HASH', "b15bb60859bef151762fc5d9eb206c67")
+chnnl = os.environ.get('CHANNEL_URL', "https://t.me/yang_tiandi")
+BOT_URL = os.environ.get('BOT_URL', "feng_uploader_bot")
 app = Client("JayBee", bot_token=bot_token, api_id=api, api_hash=hash, workers=workers)
 
 
